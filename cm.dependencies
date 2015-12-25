@@ -5,7 +5,7 @@
   },
   {
     "repository": "android_kernel_samsung_sltecan",
-    "target_path": "kernel/samsung/sltecan"
+    "target_path": "kernel/samsung/sltechn"
   },
   {
     "repository": "android_external_stlport",
