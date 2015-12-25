@@ -15,11 +15,11 @@
 # inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/sltecan
+LOCAL_PATH := device/samsung/sltechn
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-TARGET_OTA_ASSERT_DEVICE := sltecan,slteatt,SM-G850W,SM-G850A
+TARGET_OTA_ASSERT_DEVICE := sltecan,slteatt,sltechn,SM-G850W,SM-G850A,SM-G8508S
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -34,7 +34,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974pro_sec_slte_can_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := cm_selinux_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/sltecan
+TARGET_KERNEL_SOURCE := kernel/samsung/sltechn
 
 
 # Audio
