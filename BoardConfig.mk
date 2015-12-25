@@ -32,7 +32,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974pro_sec_slte_can_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974pro_sec_slte_chn_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := cm_selinux_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/sltechn
 
@@ -41,7 +41,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/sltechn
 BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_sltecan.txt
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_sltechn.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -51,12 +51,12 @@ BOARD_USES_LEGACY_MMAP := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/sltecan/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/sltechn/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # GPS
 TARGET_NO_RPC := true
-TARGET_GPS_HAL_PATH := device/samsung/sltecan/gps
+TARGET_GPS_HAL_PATH := device/samsung/sltechn/gps
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -80,10 +80,10 @@ TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(LOCAL_PATH)/power/power_ext.c
 TARGET_POWERHAL_VARIANT := qcom
 
 # Radio
-BOARD_RIL_CLASS := ../../../device/samsung/sltecan/ril
+BOARD_RIL_CLASS := ../../../device/samsung/sltechn/ril
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/sltecan/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/sltechn/recovery/recovery_keys.c
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 #
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
@@ -117,7 +117,7 @@ RECOVERY_SDCARD_ON_DATA := true
 -include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/sltecan/sepolicy
+    device/samsung/sltechn/sepolicy
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
