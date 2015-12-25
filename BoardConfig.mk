@@ -135,4 +135,4 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 
 # inherit from the proprietary version
--include vendor/samsung/sltecan/BoardConfigVendor.mk
+-include vendor/samsung/sltechn/BoardConfigVendor.mk
